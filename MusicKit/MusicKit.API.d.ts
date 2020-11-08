@@ -257,7 +257,30 @@ declare namespace MusicKit {
    */
 
   interface Resource {
-    [key: string]: any;
+    id: string;
+    href: string;
+    type: string;
+    attributes: {
+      artistName: string;
+      artwork: Artwork;
+      copyright: string;
+      editorialNotes: {
+        name: string;
+        short: string;
+        standard: string;
+      };
+      genreNames: [string];
+      isCompilation: false;
+      isComplete: true;
+      isMasteredForItunes: false;
+      isSingle: false;
+      name: string;
+      playParams: { id: string; kind: string };
+      recordLabel: string;
+      releaseDate: string;
+      trackCount: number;
+      url: string;
+    };
   }
 
   type AddToLibraryParameters = any;
