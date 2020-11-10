@@ -38,7 +38,28 @@ declare namespace MusicKit {
     /**
      * The attributes object for the media item.
      */
-    readonly attributes: any;
+    readonly attributes: {
+      albumName: string;
+      artistName: string;
+      artwork: Artwork;
+      composerName: string;
+      discNumber: number;
+      durationInMillis: number;
+      genreNames: string[];
+      isrc: string;
+      name: string;
+      playParams: { id: string; kind: string };
+      previews: [
+        {
+          url: string;
+        },
+      ];
+      releaseDate: string;
+      trackNumber: number;
+      url: string;
+      hasLyrics: boolean;
+    };
+
     /**
      * A string containing the content rating for the media item.
      */
