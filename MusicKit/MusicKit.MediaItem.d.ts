@@ -56,7 +56,7 @@ declare namespace MusicKit {
       ];
       releaseDate: string;
       trackNumber: number;
-      url: 'https://music.apple.com/jp/album/%E6%98%A5%E5%A4%8F%E7%A7%8B%E5%86%AC-blooming/1468034886?i=1468034888';
+      url: string;
       hasLyrics: boolean;
     };
 
