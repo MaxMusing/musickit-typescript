@@ -38,7 +38,28 @@ declare namespace MusicKit {
     /**
      * The attributes object for the media item.
      */
-    readonly attributes: any;
+    readonly attributes: {
+      albumName: string;
+      artistName: string;
+      artwork: Artwork;
+      composerName: string;
+      discNumber: number;
+      durationInMillis: number;
+      genreNames: string[];
+      isrc: string;
+      name: string;
+      playParams: { id: string; kind: string };
+      previews: [
+        {
+          url: string;
+        },
+      ];
+      releaseDate: string;
+      trackNumber: number;
+      url: 'https://music.apple.com/jp/album/%E6%98%A5%E5%A4%8F%E7%A7%8B%E5%86%AC-blooming/1468034886?i=1468034888';
+      hasLyrics: boolean;
+    };
+
     /**
      * A string containing the content rating for the media item.
      */
