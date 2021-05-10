@@ -30,7 +30,7 @@ declare namespace MusicKit {
     /**
      * The artwork object for the media item.
      */
-    readonly artwork: Artwork;
+    readonly artwork: AppleMusicApi.Artwork;
     /**
      * The artwork image for the media item.
      */
@@ -41,7 +41,7 @@ declare namespace MusicKit {
     readonly attributes: {
       albumName: string;
       artistName: string;
-      artwork: Artwork;
+      artwork: AppleMusicApi.Artwork;
       composerName: string;
       discNumber: number;
       durationInMillis: number;
