@@ -1,20 +1,19 @@
 {
   "name": "musickit-typescript",
-  "version": "1.2.5",
+  "version": "1.0.0",
   "description": "Typescript type definitions for MusicKit",
-  "repository": "wsmd/musickit-typescript",
+  "repository": "MaxMusing/musickit-typescript",
   "types": "./MusicKit/index.d.ts",
   "bugs": {
-    "url": "https://github.com/wsmd/musickit-typescript/issues"
+    "url": "https://github.com/MaxMusing/musickit-typescript/issues"
   },
   "scripts": {
     "lint": "tslint **/*.d.ts",
-    "test": "npm run typecheck && npm run lint",
     "typecheck": "tsc --noEmit",
     "typecheck:dev": "tsc --noEmit --watch",
-    "prepack": "npm run test"
+    "test": "npm run typecheck && npm run lint"
   },
-  "author": "Waseem Dahman <dwaseem@icloud.com>",
+  "author": "Max Musing <max@maxmusing.com>",
   "license": "MIT",
   "files": [
     "MusicKit",
